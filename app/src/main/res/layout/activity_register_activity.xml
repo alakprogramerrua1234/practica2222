@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.samirvega.practica2actividades.register_activity"
+    android:background="@color/aliceblue"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textStyle="italic"
+        android:text="@string/registro"
+        android:gravity="center"
+        android:textSize="35sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:text="@string/correo"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="35sp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/correoid"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:text="@string/contraseña"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="35sp"
+            android:inputType="textPassword"
+            android:id="@+id/contraseñaid"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:text="@string/rcontraseña"
+            android:gravity="center"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:inputType="textPassword"
+            android:id="@+id/rcontraseñaid"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Guardar"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:onClick="guardar"/>
+
+
+</LinearLayout>

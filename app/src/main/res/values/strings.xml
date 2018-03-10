@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Primiparos</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="splasht">P</string>
+    <string name="Registro">Registro</string>
+    <string name="registro">Registro</string>
+    <string name="correo">Correo electronico :</string>
+    <string name="contraseña">Contraseña :</string>
+    <string name="rcontraseña">Repita su contraseña :</string>
+    <string name="Guardar">Guardar</string>
+</resources>
