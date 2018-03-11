@@ -3,6 +3,7 @@ package com.example.samirvega.practica2actividades;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -80,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void Ingresar(View view) {  // se activa al presionar ingresar
 
+        cn=false;
+        cr=false;
+
         if (correo.getText().toString().equals("") || contraseña.getText().toString().equals("")) { //verifico que no hayan campos vacios
             Toast.makeText(this, "Faltan Datos", Toast.LENGTH_SHORT).show();
         } else {
@@ -92,10 +96,9 @@ public class MainActivity extends AppCompatActivity {
             } else Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
         }
         if(cr && cn){  // solo pongo cn,cr y el condicional lo lee como true
-            Toast.makeText(this, "verdaderos", Toast.LENGTH_SHORT).show();
             Intent ingreso = new Intent(this,Actividad_principal.class);   // si los datos estan correctos paso a Actividad_principal
             ingreso.putExtra("usuario",scorreo);
-            ingreso.putExtra("contraseña",scontraseña);
+            ingreso.putExtra("contraseña",scontraseña);     //envio los valores de usuario y contraseña a la clase Actividad_principal
             startActivity(ingreso);
         }
     }

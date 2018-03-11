@@ -18,8 +18,8 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".register_activity" />
-        <activity android:name=".Actividad_principal">
-        </activity>
+        <activity android:name=".Actividad_principal"/>
+        <activity android:name=".perfil_activity"/>
     </application>
 
 </manifest>

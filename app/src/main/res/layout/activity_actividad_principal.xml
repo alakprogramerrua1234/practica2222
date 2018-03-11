@@ -8,9 +8,12 @@
     tools:context="com.example.samirvega.practica2actividades.Actividad_principal"
     android:background="@color/navajowhite">
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="esta seria la verdadera actividad principal"/>
+        android:text="@string/bienvenido"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
 </LinearLayout>
